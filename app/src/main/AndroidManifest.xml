@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test">
         <activity
+            android:name=".listview"
+            android:exported="false" />
+        <activity
+            android:name=".CheckListView"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

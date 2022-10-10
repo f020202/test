@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "546034999703",
+    "firebase_url": "https://checklist-68feb-default-rtdb.firebaseio.com",
+    "project_id": "checklist-68feb",
+    "storage_bucket": "checklist-68feb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546034999703:android:2297ad9812a2cd9e10a4d2",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546034999703-811gu07dtfpu11akt6pcaiako03g70c2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZAQ0ElDU9XTffhlaMx9s_X1bJsmgsmbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546034999703-811gu07dtfpu11akt6pcaiako03g70c2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
