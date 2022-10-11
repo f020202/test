@@ -1,18 +1,12 @@
 package com.example.test;
 
 public class User {
-    private String profile;
+
     private String title;
     private String subtitle;
 
 
-    public String getProfile() {
-        return profile;
-    }
 
-    public void setProfile(String profile) {
-        this.profile = profile;
-    }
 
     public String getTitle() {
         return title;
