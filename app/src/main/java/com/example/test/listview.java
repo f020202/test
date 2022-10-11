@@ -54,7 +54,7 @@ public class listview extends AppCompatActivity {
         @Override
         public void onCancelled(@NonNull DatabaseError databaseError) {
 
-            Log.e("CheckListView", String.valueOf(databaseError.toException()));
+            Log.e("listview", String.valueOf(databaseError.toException()));
 
         }
     });

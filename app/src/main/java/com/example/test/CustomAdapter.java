@@ -34,9 +34,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
 
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
-        Glide.with(holder.itemView)
-                .load(arrayList.get(position).getProfile())
-                .into(holder.iv_profile);
         holder.tv_title.setText(arrayList.get(position).getTitle());
         holder.tv_subtitle.setText(arrayList.get(position).getSubtitle());
 
@@ -48,12 +45,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     }
 
     public class CustomViewHolder extends RecyclerView.ViewHolder {
-        ImageView iv_profile;
         TextView tv_title;
         TextView tv_subtitle;
         public CustomViewHolder(@NonNull View itemView) {
             super(itemView);
-            this.iv_profile = itemView.findViewById(R.id.iv_profile);
             this.tv_title = itemView.findViewById(R.id.tv_title);
             this.tv_subtitle = itemView.findViewById(R.id.tv_subtitle);
         }
