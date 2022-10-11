@@ -34,7 +34,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
 
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
-        Glide.with(holder.itemView)
+         Glide.with(holder.itemView)
                 .load(arrayList.get(position).getProfile())
                 .into(holder.iv_profile);
         holder.tv_title.setText(arrayList.get(position).getTitle());

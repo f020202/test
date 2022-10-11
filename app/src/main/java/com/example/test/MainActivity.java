@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.TextView;
-
+import android.content.Intent;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     public String readDay = null;
     public String str = null;
     public CalendarView calendarView;
-    public Button cha_Btn, del_Btn, save_Btn;
+    public Button cha_Btn, del_Btn, save_Btn,godsaeng_Btn;
     public TextView diaryTextView, textView2, textView3;
     public EditText contextEditText;
 
@@ -36,9 +36,20 @@ public class MainActivity extends AppCompatActivity {
         save_Btn = findViewById(R.id.save_Btn);
         del_Btn = findViewById(R.id.del_Btn);
         cha_Btn = findViewById(R.id.cha_Btn);
+        godsaeng_Btn= findViewById(R.id.godsaeng_Btn);
         textView2 = findViewById(R.id.textView2);
         textView3 = findViewById(R.id.textView3);
         contextEditText = findViewById(R.id.contextEditText);
+
+        Button imageButton = (Button) findViewById(R.id.godsaeng_Btn);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), godsaenglist.class);
+                startActivity(intent);
+            }
+        });
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener()
         {
