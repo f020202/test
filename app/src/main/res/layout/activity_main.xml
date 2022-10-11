@@ -135,8 +135,8 @@
         android:layout_margin="20dp"
         android:text="+"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="654dp" />
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="657dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
