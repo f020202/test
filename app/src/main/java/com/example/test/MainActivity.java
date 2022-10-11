@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.content.Intent;
 
 
 import androidx.annotation.NonNull;
@@ -22,20 +23,33 @@ public class MainActivity extends AppCompatActivity {
     public String readDay = null;
     public String str = null;
     public CalendarView calendarView;
-    public Button cha_Btn, del_Btn, save_Btn;
+    public Button cha_Btn, del_Btn, save_Btn,godsaeng_Btn;
     public TextView diaryTextView, textView2, textView3;
     public EditText contextEditText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         calendarView = findViewById(R.id.calendarView);
         diaryTextView = findViewById(R.id.diaryTextView);
         save_Btn = findViewById(R.id.save_Btn);
         del_Btn = findViewById(R.id.del_Btn);
         cha_Btn = findViewById(R.id.cha_Btn);
+        godsaeng_Btn = findViewById(R.id.godsaeng_Btn);
+
+        godsaeng_Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CheckListView.class);
+                startActivity(intent);
+            }
+        });
+
+
         textView2 = findViewById(R.id.textView2);
         textView3 = findViewById(R.id.textView3);
         contextEditText = findViewById(R.id.contextEditText);
