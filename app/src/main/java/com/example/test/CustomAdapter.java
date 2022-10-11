@@ -16,10 +16,10 @@ import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomViewHolder>{
 
-    private ArrayList<CheckList> arrayList;
+    private ArrayList<User> arrayList;
     private Context context;
 
-    public CustomAdapter(ArrayList<CheckList> arrayList, Context context) {
+    public CustomAdapter(ArrayList<User> arrayList, Context context) {
         this.arrayList = arrayList;
         this.context = context;
     }

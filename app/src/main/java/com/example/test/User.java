@@ -1,6 +1,6 @@
 package com.example.test;
 
-public class CheckList {
+public class User {
     private String profile;
     private String title;
     private String subtitle;
@@ -30,5 +30,5 @@ public class CheckList {
         this.subtitle = subtitle;
     }
 
-    public CheckList(){}
+    public User(){}
 }
